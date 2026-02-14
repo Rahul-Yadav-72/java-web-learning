@@ -1,0 +1,53 @@
+# Eclipse / IDE files
+.classpath
+.project
+.settings/
+
+# Server config
+Servers/
+
+# JAR files
+*.jar
+
+# Build folders
+bin/
+target/
+/.metadata/
+
+# Compiled class files
+*.class
+build/
+
+# Tomcat server files
+Servers/
+# Ignore compiled files
+*.class
+build/
+
+# Maven
+/target/
+**/target/
+
+# Eclipse / IDE
+.classpath
+.project
+.settings/
+.metadata/
+Servers/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Compiled files
+*.class
+
+
+Servers/ 
