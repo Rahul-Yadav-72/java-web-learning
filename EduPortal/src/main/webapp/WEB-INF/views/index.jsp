@@ -75,14 +75,12 @@ body {
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto align-items-center">
-        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-        <li class="nav-item ms-2">
-            <a class="btn btn-success px-4" href="login.jsp">Login</a>
-        </li>
-      </ul>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+    <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/course">Courses</a></li>
+    <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/about">About</a></li>
+    <li class="nav-item ms-2"><a class="btn btn-primary" href="${pageContext.request.contextPath}/login">Login</a></li>
+</ul>
     </div>
   </div>
 </nav>
@@ -106,7 +104,7 @@ body {
                 <i class="bi bi-cup-hot fs-1 text-primary"></i>
                 <h5 class="mt-3">Java Programming</h5>
                 <p>Master Core Java, OOPs & Advanced Concepts.</p>
-                <button class="btn btn-primary">Enroll Now</button>
+               <a href="${pageContext.request.contextPath}/login" class="btn btn-primary">Enroll Now</a>
             </div>
         </div>
 
@@ -115,7 +113,7 @@ body {
                 <i class="bi bi-code-slash fs-1 text-success"></i>
                 <h5 class="mt-3">Web Development</h5>
                 <p>HTML, CSS, JavaScript & Bootstrap complete guide.</p>
-                <button class="btn btn-success">Enroll Now</button>
+                <a href="${pageContext.request.contextPath}/login" class="btn btn-primary">Enroll Now</a>
             </div>
         </div>
 
@@ -124,7 +122,7 @@ body {
                 <i class="bi bi-layers fs-1 text-danger"></i>
                 <h5 class="mt-3">Spring Framework</h5>
                 <p>Build powerful enterprise-level applications.</p>
-                <button class="btn btn-danger">Enroll Now</button>
+                <a href="${pageContext.request.contextPath}/login" class="btn btn-primary">Enroll Now</a>
             </div>
         </div>
 
