@@ -36,8 +36,7 @@
 <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
         <span class="navbar-brand">👨‍🏫 Teacher Dashboard</span>
-        <a href="${pageContext.request.contextPath}/login"
-           class="btn btn-danger btn-sm">Logout</a>
+        
     </div>
 </nav>
 
@@ -56,6 +55,7 @@
         <a href="${pageContext.request.contextPath}/teacher/assignments">📝 Assignments</a>
         <a href="${pageContext.request.contextPath}/teacher/quizzes">🧠 Quizzes</a>
         <a href="${pageContext.request.contextPath}/teacher/profile">👤 Profile</a>
+        <a href="${pageContext.request.contextPath}/login">🚪 Logout</a>
     </div>
 
     <!-- ===== MAIN CONTENT ===== -->
