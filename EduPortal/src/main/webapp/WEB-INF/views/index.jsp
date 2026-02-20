@@ -90,7 +90,7 @@ body {
     <div class="container">
         <h1>Learn Anytime, Anywhere 🚀</h1>
         <p>Upgrade your skills with our professional online courses</p>
-        <a href="#" class="btn btn-light btn-lg mt-3 px-5">Explore Courses</a>
+        <a href="${pageContext.request.contextPath}/courses" class="btn btn-light btn-lg mt-3 px-5">Explore Courses</a>
     </div>
 </section>
 
@@ -104,8 +104,9 @@ body {
                 <i class="bi bi-cup-hot fs-1 text-primary"></i>
                 <h5 class="mt-3">Java Programming</h5>
                 <p>Master Core Java, OOPs & Advanced Concepts.</p>
-               <a href="${pageContext.request.contextPath}/login" class="btn btn-primary">Enroll Now</a>
-            </div>
+					<a href="${pageContext.request.contextPath}/login"
+						class="btn btn-primary">Enroll Now</a>
+				</div>
         </div>
 
         <div class="col-md-4">
