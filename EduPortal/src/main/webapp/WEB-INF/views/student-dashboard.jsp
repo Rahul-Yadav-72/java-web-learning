@@ -54,9 +54,8 @@ body {
 				<h4 class="text-center text-white">🎓 Student Panel</h4>
 				<hr class="text-white">
 
-				<a href="student">🏠 Dashboard</a> <a
-					href="student/courses">📚 My Courses</a> <a
-					href="student/assignments">📝 Assignments</a> <a
+				<a href="student">🏠 Dashboard</a> <a href="student/courses">📚
+					My Courses</a><a href="student/allcourses">📚 All Courses</a> <a href="student/assignments">📝 Assignments</a> <a
 					href="student/quiz">🧠 Quiz</a> <a href="student/progress">📊
 					Progress</a> <a href="student/certificate">🎓 Certificate</a> <a
 					href="student/profile">👤 Profile</a> <a href="login">🚪 Logout</a>
@@ -83,6 +82,7 @@ body {
 							</div>
 						</div>
 					</div>
+
 
 					<div class="col-md-4">
 						<div class="card shadow stat-card">
@@ -119,7 +119,7 @@ body {
 								<div class="progress mb-3">
 									<div class="progress-bar bg-success" style="width: 70%"></div>
 								</div>
-								<a href="course-details.jsp" class="btn btn-primary w-100">Continue</a>
+								<a href="" class="btn btn-primary w-100">Continue</a>
 							</div>
 						</div>
 					</div>
@@ -135,7 +135,7 @@ body {
 								<div class="progress mb-3">
 									<div class="progress-bar bg-warning" style="width: 40%"></div>
 								</div>
-								<a href="course-details.jsp" class="btn btn-primary w-100">Continue</a>
+								<a href="" class="btn btn-primary w-100">Continue</a>
 							</div>
 						</div>
 					</div>
@@ -151,7 +151,7 @@ body {
 								<div class="progress mb-3">
 									<div class="progress-bar bg-danger" style="width: 20%"></div>
 								</div>
-								<a href="student/course-details" class="btn btn-primary w-100">Continue</a>
+								<a href="" class="btn btn-primary w-100">Continue</a>
 							</div>
 						</div>
 					</div>
