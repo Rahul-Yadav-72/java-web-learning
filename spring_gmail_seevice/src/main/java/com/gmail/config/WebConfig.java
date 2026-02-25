@@ -40,7 +40,7 @@ public class WebConfig {
         mailSender.setHost("smtp.gmail.com");
         mailSender.setPort(587);
         mailSender.setUsername("collegeboys17112005@gmail.com");
-        mailSender.setPassword("rvicwxmsidegxheq"); // 🔴 Put Gmail App Password here
+        mailSender.setPassword("put your app key"); // 🔴 Put Gmail App Password here
 
         Properties props = mailSender.getJavaMailProperties();
         props.put("mail.smtp.auth", "true");
