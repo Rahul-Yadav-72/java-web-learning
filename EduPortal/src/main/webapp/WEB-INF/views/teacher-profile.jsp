@@ -76,12 +76,12 @@
                          class="rounded-circle mb-3"
                          alt="Profile Image"> -->
 
-                    <h5>John Doe</h5>
+                    <h5>prince kumar</h5>
                     <p class="text-muted">Senior Java Instructor</p>
 
                     <hr>
 
-                    <p><strong>Email:</strong> john@example.com</p>
+                    <p><strong>Email:</strong> prince056@rku.ac.in</p>
                     <p><strong>Phone:</strong> +91 9876543210</p>
                 </div>
             </div>
@@ -100,13 +100,13 @@
                             <div class="mb-3">
                                 <label class="form-label fw-bold">Full Name</label>
                                 <input type="text" class="form-control"
-                                       value="John Doe">
+                                       value="prince kumar">
                             </div>
 
                             <div class="mb-3">
                                 <label class="form-label fw-bold">Email</label>
                                 <input type="email" class="form-control"
-                                       value="john@example.com">
+                                       value="prince056@rku.ac.in">
                             </div>
 
                             <div class="mb-3">

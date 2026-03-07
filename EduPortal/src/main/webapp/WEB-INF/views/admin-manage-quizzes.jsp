@@ -100,7 +100,7 @@ body {
 								<td>20</td>
 								<td>100</td>
 								<td><span class="badge bg-success">Active</span></td>
-								<td><a href="#" class="btn btn-primary btn-sm">Edit</a> <a
+								<td><a href="admin-edit-quiz" class="btn btn-primary btn-sm">Edit</a> <a
 									href="#" class="btn btn-danger btn-sm"
 									onclick="return confirm('Are you sure?')">Delete</a></td>
 							</tr>
@@ -112,7 +112,7 @@ body {
 								<td>15</td>
 								<td>75</td>
 								<td><span class="badge bg-success">Active</span></td>
-								<td><a href="#" class="btn btn-primary btn-sm">Edit</a> <a
+								<td><a href="admin-edit-quiz" class="btn btn-primary btn-sm">Edit</a> <a
 									href="#" class="btn btn-danger btn-sm"
 									onclick="return confirm('Are you sure?')">Delete</a></td>
 							</tr>
@@ -124,7 +124,7 @@ body {
 								<td>25</td>
 								<td>125</td>
 								<td><span class="badge bg-danger">Inactive</span></td>
-								<td><a href="#" class="btn btn-primary btn-sm">Edit</a> <a
+								<td><a href="admin-edit-quiz" class="btn btn-primary btn-sm">Edit</a> <a
 									href="#" class="btn btn-danger btn-sm"
 									onclick="return confirm('Are you sure?')">Delete</a></td>
 							</tr>
@@ -136,7 +136,7 @@ body {
 								<td>30</td>
 								<td>150</td>
 								<td><span class="badge bg-success">Active</span></td>
-								<td><a href="#" class="btn btn-primary btn-sm">Edit</a> <a
+								<td><a href="admin-edit-quiz" class="btn btn-primary btn-sm">Edit</a> <a
 									href="#" class="btn btn-danger btn-sm"
 									onclick="return confirm('Are you sure?')">Delete</a></td>
 							</tr>
@@ -148,7 +148,7 @@ body {
 								<td>20</td>
 								<td>100</td>
 								<td><span class="badge bg-danger">Inactive</span></td>
-								<td><a href="#" class="btn btn-primary btn-sm">Edit</a> <a
+								<td><a href="admin-edit-quiz" class="btn btn-primary btn-sm">Edit</a> <a
 									href="#" class="btn btn-danger btn-sm"
 									onclick="return confirm('Are you sure?')">Delete</a></td>
 							</tr>

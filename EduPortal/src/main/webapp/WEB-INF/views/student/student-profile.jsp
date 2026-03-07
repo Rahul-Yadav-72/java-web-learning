@@ -1,137 +1,93 @@
-<%@ page contentType="text/html;charset=UTF-8"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My Profile</title>
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-	rel="stylesheet">
-
-<style>
-body {
-	background-color: #f4f6f9;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.sidebar {
-	height: 100vh;
-	background-color: #212529;
-	padding-top: 20px;
-}
-
-.sidebar a {
-	color: white;
-	display: block;
-	padding: 12px;
-	text-decoration: none;
-	border-radius: 5px;
-	margin: 5px 10px;
-}
-
-.sidebar a:hover {
-	background-color: #0d6efd;
-}
-
-.card:hover {
-	transform: scale(1.02);
-	transition: 0.3s;
-}
-
-.profile-card {
-	border-radius: 15px;
-}
-
-.btn-custom {
-	border-radius: 50px;
-	padding: 8px 25px;
-}
-</style>
+    <meta charset="UTF-8">
+    <title>My Profile | EduPortal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Inter', sans-serif; }</style>
 </head>
+<body class="bg-gray-50 text-gray-900">
 
-<body>
+    <div class="flex min-h-screen">
+        <aside class="w-64 bg-slate-900 text-white flex-shrink-0">
+            <div class="p-6">
+                <h4 class="text-xl font-bold flex items-center gap-2">🎓 EduPortal</h4>
+            </div>
+            <nav class="mt-4 px-4 space-y-2">
+                <a href="${pageContext.request.contextPath}/student" class="block py-3 px-4 rounded-xl text-gray-400 hover:bg-slate-800 hover:text-white transition">🏠 Dashboard</a>
+                <a href="${pageContext.request.contextPath}/student/courses" class="block py-3 px-4 rounded-xl text-gray-400 hover:bg-slate-800 hover:text-white transition">📚 My Courses</a>
+                <a href="#" class="block py-3 px-4 rounded-xl bg-blue-600 text-white shadow-lg shadow-blue-900/20">👤 Profile</a>
+                <div class="pt-10">
+                    <a href="${pageContext.request.contextPath}/login" class="block py-3 px-4 rounded-xl text-red-400 hover:bg-red-900/30 hover:text-red-400 transition">🚪 Logout</a>
+                </div>
+            </nav>
+        </aside>
 
-	<div class="container-fluid">
-		<div class="row">
+        <main class="flex-1 p-10">
+            <div class="max-w-4xl mx-auto">
+                <header class="mb-8">
+                    <h1 class="text-3xl font-bold">Profile Settings</h1>
+                    <p class="text-gray-500">Update your personal details and keep your account secure.</p>
+                </header>
 
-			<!-- Sidebar -->
-			<div class="col-md-2 sidebar">
-				<h4 class="text-center text-white">🎓 Student Panel</h4>
-				<hr class="text-white">
-				<a href="${pageContext.request.contextPath}/student">🏠
-					Dashboard</a> <a
-					href="${pageContext.request.contextPath}/student/courses">📚 My
-					Courses</a><a href="${pageContext.request.contextPath}/student/allcourses">📚 All Courses</a> <a
-					href="${pageContext.request.contextPath}/student/assignments">📝
-					Assignments</a> <a
-					href="${pageContext.request.contextPath}/student/quiz">🧠 Quiz</a>
-				<a href="${pageContext.request.contextPath}/student/progress">📊
-					Progress</a> <a
-					href="${pageContext.request.contextPath}/student/certificate">🎓
-					Certificate</a> <a
-					href="${pageContext.request.contextPath}/student/profile">👤
-					Profile</a> <a href="${pageContext.request.contextPath}/login">🚪
-					Logout</a>
-			</div>
+                <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
+                    
+                    <div class="h-32 bg-gradient-to-r from-blue-600 to-indigo-600"></div>
+                    
+                    <div class="px-8 pb-8 -mt-16">
+                        <div class="flex flex-col md:flex-row gap-8">
+                            
+                            <div class="flex-shrink-0">
+                                <div class="w-32 h-32 rounded-2xl border-4 border-white bg-gray-200 flex items-center justify-center text-4xl shadow-md">
+                                    👤
+                                </div>
+                                <div class="mt-4">
+                                    <h5 class="text-xl font-bold">Rahul Kumar</h5>
+                                    <p class="text-sm text-gray-500">Student ID: #ST-2026</p>
+                                </div>
+                            </div>
 
-			<!-- Main Content -->
-			<div class="col-md-10 p-4">
+                            <div class="flex-1 pt-4">
+                                <form action="update-profile" method="post" class="space-y-6">
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                                            <input type="text" name="name" value="Rahul Kumar" 
+                                                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 outline-none transition">
+                                        </div>
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                                            <input type="email" name="email" value="rahul@email.com" 
+                                                class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 text-gray-500 cursor-not-allowed" readonly>
+                                        </div>
+                                    </div>
 
-				<!-- Top Navbar -->
-				<nav class="navbar navbar-light bg-white shadow-sm mb-4">
-					<div class="container-fluid">
-						<span class="navbar-brand mb-0 h5">👤 My Profile</span>
-					</div>
-				</nav>
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Mobile Number</label>
+                                        <div class="flex gap-2">
+                                            <span class="flex items-center px-4 bg-gray-100 border border-gray-200 rounded-xl text-gray-500">+91</span>
+                                            <input type="tel" name="mobile" pattern="[0-9]{10}" maxlength="10" 
+                                                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 outline-none transition">
+                                        </div>
+                                    </div>
 
-				<!-- Profile Card -->
-				<div class="card shadow profile-card p-4">
-
-					<div class="row">
-
-						<!-- Profile Image -->
-						<div class="col-md-4 text-center">
-							<!-- <img src="https://via.placeholder.com/150" 
-								class="rounded-circle mb-3" width="150" height="150"> -->
-							<h5>Rahul Kumar</h5>
-							<p class="text-muted">Student</p>
-						</div>
-
-						<!-- Profile Form -->
-						<div class="col-md-8">
-							<form>
-								<div class="mb-3">
-									<label class="form-label">Full Name</label> <input type="text"
-										class="form-control" value="Rahul Kumar">
-								</div>
-
-								<div class="mb-3">
-									<label class="form-label">Email</label> <input type="email"
-										class="form-control" value="rahul@email.com">
-								</div>
-
-
-
-								<div class="mb-3">
-									<label class="form-label">Mobile Number</label>
-									<div class="input-group">
-										<span class="input-group-text">+91</span> <input type="tel"
-											class="form-control" name="mobile" pattern="[0-9]{10}"
-											maxlength="10" required>
-									</div>
-								</div>
-
-								<button type="submit" class="btn btn-success btn-custom w-100">Update
-									Profile</button>
-							</form>
-						</div>
-
-					</div>
-
-				</div>
-
-			</div>
-		</div>
-	</div>
-
+                                    <div class="pt-4 flex justify-end">
+                                        <button type="submit" 
+                                            class="px-8 py-3 bg-slate-900 text-white font-semibold rounded-xl hover:bg-black transition shadow-lg shadow-gray-300">
+                                            Save Changes
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>

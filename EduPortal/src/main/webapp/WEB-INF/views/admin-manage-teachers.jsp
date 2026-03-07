@@ -94,7 +94,7 @@ body {
 								<td>9876543210</td>
 								<td>Java Programming</td>
 								<td><span class="badge bg-success">Active</span></td>
-								<td><a href="#" class="btn btn-sm btn-warning btn-custom">✏
+								<td><a href="admin-edit-teacher" class="btn btn-sm btn-warning btn-custom">✏
 										Edit</a> <a href="#" class="btn btn-sm btn-danger btn-custom"
 									onclick="return confirm('Are you sure?');">🗑 Delete</a></td>
 							</tr>
@@ -106,7 +106,7 @@ body {
 								<td>9123456780</td>
 								<td>Web Development</td>
 								<td><span class="badge bg-success">Active</span></td>
-								<td><a href="#" class="btn btn-sm btn-warning btn-custom">✏
+								<td><a href="admin-edit-teacher" class="btn btn-sm btn-warning btn-custom">✏
 										Edit</a> <a href="#" class="btn btn-sm btn-danger btn-custom"
 									onclick="return confirm('Are you sure?');">🗑 Delete</a></td>
 							</tr>
@@ -118,7 +118,7 @@ body {
 								<td>9988776655</td>
 								<td>Spring Framework</td>
 								<td><span class="badge bg-warning text-dark">Inactive</span></td>
-								<td><a href="#" class="btn btn-sm btn-warning btn-custom">✏
+								<td><a href="admin-edit-teacher" class="btn btn-sm btn-warning btn-custom">✏
 										Edit</a> <a href="#" class="btn btn-sm btn-danger btn-custom"
 									onclick="return confirm('Are you sure?');">🗑 Delete</a></td>
 							</tr>
@@ -130,7 +130,7 @@ body {
 								<td>9012345678</td>
 								<td>Python Programming</td>
 								<td><span class="badge bg-success">Active</span></td>
-								<td><a href="#" class="btn btn-sm btn-warning btn-custom">✏
+								<td><a href="admin-edit-teacher" class="btn btn-sm btn-warning btn-custom">✏
 										Edit</a> <a href="#" class="btn btn-sm btn-danger btn-custom"
 									onclick="return confirm('Are you sure?');">🗑 Delete</a></td>
 							</tr>
@@ -142,7 +142,7 @@ body {
 								<td>9090909090</td>
 								<td>Data Structures</td>
 								<td><span class="badge bg-success">Active</span></td>
-								<td><a href="#" class="btn btn-sm btn-warning btn-custom">✏
+								<td><a href="admin-edit-teacher" class="btn btn-sm btn-warning btn-custom">✏
 										Edit</a> <a href="#" class="btn btn-sm btn-danger btn-custom"
 									onclick="return confirm('Are you sure?');">🗑 Delete</a></td>
 							</tr>

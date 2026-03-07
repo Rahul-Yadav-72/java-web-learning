@@ -1,150 +1,87 @@
-<%@ page contentType="text/html;charset=UTF-8"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My Courses</title>
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-	rel="stylesheet">
-
-<style>
-body {
-	background-color: #f4f6f9;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.sidebar {
-	height: 100vh;
-	background-color: #212529;
-	padding-top: 20px;
-}
-
-.sidebar a {
-	color: white;
-	display: block;
-	padding: 12px;
-	text-decoration: none;
-	border-radius: 5px;
-	margin: 5px 10px;
-}
-
-.sidebar a:hover {
-	background-color: #0d6efd;
-}
-
-.card:hover {
-	transform: scale(1.02);
-	transition: 0.3s;
-}
-
-.stat-card {
-	border-left: 5px solid #0d6efd;
-}
-</style>
+    <meta charset="UTF-8">
+    <title>My Courses | EduPortal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-slate-50 text-gray-900">
 
-<body>
+    <div class="flex min-h-screen">
+        <aside class="w-64 bg-slate-900 text-white flex-shrink-0">
+            <div class="p-6">
+                <h4 class="text-xl font-bold text-center">🎓 EduPortal</h4>
+            </div>
+            <nav class="mt-4 px-4 space-y-2">
+                <a href="${pageContext.request.contextPath}/student" class="block py-2.5 px-4 rounded-lg hover:bg-slate-800 transition">🏠 Dashboard</a>
+                <a href="${pageContext.request.contextPath}/student/courses" class="block py-2.5 px-4 rounded-lg bg-blue-600">📚 My Courses</a>
+                <a href="${pageContext.request.contextPath}/student/allcourses" class="block py-2.5 px-4 rounded-lg hover:bg-slate-800 transition">📚 All Courses</a>
+                <a href="${pageContext.request.contextPath}/student/assignments" class="block py-2.5 px-4 rounded-lg hover:bg-slate-800 transition">📝 Assignments</a>
+                <a href="${pageContext.request.contextPath}/student/quiz" class="block py-2.5 px-4 rounded-lg hover:bg-slate-800 transition">🧠 Quiz</a>
+                <a href="${pageContext.request.contextPath}/student/progress" class="block py-2.5 px-4 rounded-lg hover:bg-slate-800 transition">📊 Progress</a>
+                <a href="${pageContext.request.contextPath}/student/profile" class="block py-2.5 px-4 rounded-lg hover:bg-slate-800 transition">👤 Profile</a>
+                <div class="pt-10">
+                    <a href="${pageContext.request.contextPath}/login" class="block py-2.5 px-4 rounded-lg bg-red-900/30 text-red-400 hover:bg-red-900 hover:text-white transition">🚪 Logout</a>
+                </div>
+            </nav>
+        </aside>
 
-	<div class="container-fluid">
-		<div class="row">
+        <main class="flex-1 p-8">
+            
+            <header class="bg-white shadow-sm p-4 rounded-2xl mb-8 flex justify-between items-center border border-gray-100">
+                <h1 class="text-xl font-bold">📚 My Courses</h1>
+            </header>
 
-			<!-- Sidebar -->
-			<div class="col-md-2 sidebar">
-				<h4 class="text-center text-white">🎓 Student Panel</h4>
-				<hr class="text-white">
-				<a href="${pageContext.request.contextPath}/student">🏠
-					Dashboard</a> <a
-					href="${pageContext.request.contextPath}/student/courses">📚 My
-					Courses</a><a href="${pageContext.request.contextPath}/student/allcourses">📚 All Courses</a> <a
-					href="${pageContext.request.contextPath}/student/assignments">📝
-					Assignments</a> <a
-					href="${pageContext.request.contextPath}/student/quiz">🧠 Quiz</a>
-				<a href="${pageContext.request.contextPath}/student/progress">📊
-					Progress</a> <a
-					href="${pageContext.request.contextPath}/student/certificate">🎓
-					Certificate</a> <a
-					href="${pageContext.request.contextPath}/student/profile">👤
-					Profile</a> <a href="${pageContext.request.contextPath}/login">🚪
-					Logout</a>
-			</div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 border-l-4 border-l-blue-600">
+                    <p class="text-sm text-gray-500">Total Courses</p>
+                    <h3 class="text-2xl font-bold mt-1">3</h3>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 border-l-4 border-l-green-500">
+                    <p class="text-sm text-gray-500">Completed</p>
+                    <h3 class="text-2xl font-bold mt-1">1</h3>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 border-l-4 border-l-yellow-500">
+                    <p class="text-sm text-gray-500">In Progress</p>
+                    <h3 class="text-2xl font-bold mt-1">2</h3>
+                </div>
+            </div>
 
-			<!-- Main Content -->
-			<div class="col-md-10 p-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 hover:shadow-lg transition-all">
+                    <h5 class="font-bold text-lg mb-1">Java Programming</h5>
+                    <p class="text-xs text-gray-400 mb-4">Duration: 8 Weeks</p>
+                    <div class="w-full bg-gray-100 rounded-full h-2 mb-4">
+                        <div class="bg-green-500 h-2 rounded-full" style="width: 70%"></div>
+                    </div>
+                    <a href="course-details.jsp" class="block text-center bg-blue-600 text-white font-bold py-2 rounded-lg hover:bg-blue-700 transition">Continue</a>
+                </div>
 
-				<!-- Top Navbar -->
-				<nav class="navbar navbar-light bg-white shadow-sm mb-4">
-					<div class="container-fluid">
-						<span class="navbar-brand mb-0 h5">📚 My Courses</span>
-					</div>
-				</nav>
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 hover:shadow-lg transition-all">
+                    <h5 class="font-bold text-lg mb-1">Web Development</h5>
+                    <p class="text-xs text-gray-400 mb-4">Duration: 6 Weeks</p>
+                    <div class="w-full bg-gray-100 rounded-full h-2 mb-4">
+                        <div class="bg-yellow-500 h-2 rounded-full" style="width: 40%"></div>
+                    </div>
+                    <a href="course-details.jsp" class="block text-center bg-blue-600 text-white font-bold py-2 rounded-lg hover:bg-blue-700 transition">Continue</a>
+                </div>
 
-				<!-- Statistics Row -->
-				<div class="row mb-4">
-					<div class="col-md-4">
-						<div class="card shadow stat-card p-3">
-							<h6>Total Courses</h6>
-							<h3>3</h3>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="card shadow stat-card p-3">
-							<h6>Completed</h6>
-							<h3>1</h3>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="card shadow stat-card p-3">
-							<h6>In Progress</h6>
-							<h3>2</h3>
-						</div>
-					</div>
-				</div>
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 hover:shadow-lg transition-all">
+                    <h5 class="font-bold text-lg mb-1">Spring Framework</h5>
+                    <p class="text-xs text-gray-400 mb-4">Duration: 5 Weeks</p>
+                    <div class="w-full bg-gray-100 rounded-full h-2 mb-4">
+                        <div class="bg-red-500 h-2 rounded-full" style="width: 20%"></div>
+                    </div>
+                    <a href="course-details.jsp" class="block text-center bg-blue-600 text-white font-bold py-2 rounded-lg hover:bg-blue-700 transition">Continue</a>
+                </div>
 
-				<!-- Courses Row -->
-				<div class="row g-4">
-
-					<!-- Course 1 -->
-					<div class="col-md-4">
-						<div class="card shadow text-center p-3">
-							<h5>Java Programming</h5>
-							<p>Duration: 8 Weeks</p>
-							<div class="progress mb-3">
-								<div class="progress-bar bg-success" style="width: 70%"></div>
-							</div>
-							<a href="course-details.jsp" class="btn btn-primary w-100">Continue</a>
-						</div>
-					</div>
-
-					<!-- Course 2 -->
-					<div class="col-md-4">
-						<div class="card shadow text-center p-3">
-							<h5>Web Development</h5>
-							<p>Duration: 6 Weeks</p>
-							<div class="progress mb-3">
-								<div class="progress-bar bg-warning" style="width: 40%"></div>
-							</div>
-							<a href="course-details.jsp" class="btn btn-primary w-100">Continue</a>
-						</div>
-					</div>
-
-					<!-- Course 3 -->
-					<div class="col-md-4">
-						<div class="card shadow text-center p-3">
-							<h5>Spring Framework</h5>
-							<p>Duration: 5 Weeks</p>
-							<div class="progress mb-3">
-								<div class="progress-bar bg-danger" style="width: 20%"></div>
-							</div>
-							<a href="course-details.jsp" class="btn btn-primary w-100">Continue</a>
-						</div>
-					</div>
-
-				</div>
-				<!-- End Courses Row -->
-
-			</div>
-		</div>
-	</div>
+            </div>
+        </main>
+    </div>
 
 </body>
 </html>

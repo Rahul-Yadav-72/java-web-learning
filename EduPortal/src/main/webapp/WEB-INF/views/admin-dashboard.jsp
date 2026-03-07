@@ -77,7 +77,7 @@ body {
 				<!-- Top Navbar -->
 				<nav class="navbar navbar-light bg-white shadow-sm mb-4">
 					<div class="container-fluid">
-						<span class="navbar-brand mb-0 h5">Welcome, Admin 👑</span>
+						<span class="navbar-brand mb-0 h5">Welcome, Rahul 👑</span>
 					</div>
 				</nav>
 

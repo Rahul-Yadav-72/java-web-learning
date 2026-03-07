@@ -94,7 +94,7 @@ body {
 								<td>3 Months</td>
 								<td>₹5000</td>
 								<td><span class="badge bg-success">Active</span></td>
-								<td><a href="#" class="btn btn-sm btn-warning btn-custom">✏
+								<td><a href="admin-edit-course" class="btn btn-sm btn-warning btn-custom">✏
 										Edit</a> <a href="#" class="btn btn-sm btn-danger btn-custom"
 									onclick="return confirm('Are you sure?');">🗑 Delete</a></td>
 							</tr>
@@ -106,7 +106,7 @@ body {
 								<td>4 Months</td>
 								<td>₹7000</td>
 								<td><span class="badge bg-success">Active</span></td>
-								<td><a href="#" class="btn btn-sm btn-warning btn-custom">✏
+								<td><a href="admin-edit-course" class="btn btn-sm btn-warning btn-custom">✏
 										Edit</a> <a href="#" class="btn btn-sm btn-danger btn-custom"
 									onclick="return confirm('Are you sure?');">🗑 Delete</a></td>
 							</tr>
@@ -118,7 +118,7 @@ body {
 								<td>2 Months</td>
 								<td>₹6000</td>
 								<td><span class="badge bg-secondary">Inactive</span></td>
-								<td><a href="#" class="btn btn-sm btn-warning btn-custom">✏
+								<td><a href="admin-edit-course" class="btn btn-sm btn-warning btn-custom">✏
 										Edit</a> <a href="#" class="btn btn-sm btn-danger btn-custom"
 									onclick="return confirm('Are you sure?');">🗑 Delete</a></td>
 							</tr>
@@ -130,7 +130,7 @@ body {
 								<td>3 Months</td>
 								<td>₹5500</td>
 								<td><span class="badge bg-success">Active</span></td>
-								<td><a href="#" class="btn btn-sm btn-warning btn-custom">✏
+								<td><a href="admin-edit-course" class="btn btn-sm btn-warning btn-custom">✏
 										Edit</a> <a href="#" class="btn btn-sm btn-danger btn-custom"
 									onclick="return confirm('Are you sure?');">🗑 Delete</a></td>
 							</tr>
@@ -142,7 +142,7 @@ body {
 								<td>2 Months</td>
 								<td>₹4500</td>
 								<td><span class="badge bg-success">Active</span></td>
-								<td><a href="#" class="btn btn-sm btn-warning btn-custom">✏
+								<td><a href="admin-edit-course" class="btn btn-sm btn-warning btn-custom">✏
 										Edit</a> <a href="#" class="btn btn-sm btn-danger btn-custom"
 									onclick="return confirm('Are you sure?');">🗑 Delete</a></td>
 							</tr>
