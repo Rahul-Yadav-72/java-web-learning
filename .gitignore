@@ -52,3 +52,4 @@ Thumbs.db
 
 Servers/ 
 spring_gmail_seevice/ 
+*.zip 
