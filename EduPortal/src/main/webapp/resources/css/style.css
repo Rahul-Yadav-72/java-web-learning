@@ -1,0 +1,15 @@
+/* src/main/webapp/resources/css/style.css */
+
+/* Validation Errors */
+.error-message {
+    color: #ef4444; /* Tailwind red-500 */
+    font-size: 0.875rem; /* text-sm */
+    margin-top: 0.25rem;
+    display: block;
+}
+
+/* Invalid Input Box Style */
+.is-invalid {
+    border: 1px solid #ef4444 !important;
+    ring: 2px solid #ef4444 !important;
+}
